@@ -7,7 +7,7 @@ public class EmployeeSalaryPrinter implements Printer {
 
         if (employee.salary < 0) {
             System.out.println("Incorrect salary value");
-        } else {
+        } else if ( employee.salary >= 5000) {
 
             System.out.println("Salary: " + employee.salary);
         }
