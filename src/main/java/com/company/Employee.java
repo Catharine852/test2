@@ -24,20 +24,24 @@ public class Employee {
         this.age = age;
         this.team = team;
 
-        if (salary == 0) { // если использовать else, то при выполнении условия цикл не продолжиться,
-            // а если только if, то программа зайдет в каждое условие и проверит его
-            switch (position) {
-                case JUNIOR:
-                    salary = 5000;
-                    break;
-                case MIDDLE:
-                    salary = 10000;
-                    break;
-                case SENIOR:
-                    salary = 20000;
-                    break;
-            }
+        if (salary == 0) {
+            salary = position.minSalary;
 
+//            switch (position) { // свич-кейсом можно заменить иф-элс
+//                case JUNIOR:
+//                    salary = 5000;
+//                    break;
+//                case MIDDLE:
+//                    salary = 10000;
+//                    break;
+//                case SENIOR:
+//                    salary = 20000;
+//                    break;
+//                default: salary = -10000;
+//            }
+
+// если использовать else, то при выполнении условия цикл не продолжиться,
+            // а если только if, то программа зайдет в каждое условие и проверит его
 //            if ( position == POSITION.JUNIOR ) { // это всё можно заменить на свич-кейс как выше
 //                salary = 5000;
 //            } else if ( position == POSITION.MIDDLE ) {

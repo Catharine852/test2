@@ -37,7 +37,7 @@ public class Main {
 //        namePrinter.print(employees[index]);
 //        salaryPrinter.print(employees[index]);
 //    }
-        for (Employee employee : employees) {
+        for (Employee employee : employees) { // это укороченная запись (int index = 0; index < employees.length; index++)
             namePrinter.print(employee);
             salaryPrinter.print(employee);
         }
