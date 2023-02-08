@@ -56,6 +56,7 @@ public class Main {
         addToList(new Employee("Ivan", "Ivanov", 26, "QA", 25000, POSITION.JUNIOR), employeeList);
         addToList(new Employee("Ivan", "Ivanov", 26, "QA", 25000, POSITION.MIDDLE), employeeList);
 
+        System.out.println("**************** вывод employeeList ***************************");
         for (Employee employee : employeeList) {
             namePrinter.print(employee);
             salaryPrinter.print(employee);
@@ -69,6 +70,7 @@ public class Main {
         addToList(new Employee("Gleb", "Popov", 25, "AQA", POSITION.SENIOR), employeeLinkedList);
         addToList(new Employee("Boris", "Petrov", 45, "Developer", POSITION.SENIOR), employeeLinkedList);
 
+        System.out.println("**************** вывод employeeLinkedList ***************************");
         for (Employee employee : employeeLinkedList) {
             namePrinter.print(employee);
             salaryPrinter.print(employee);
@@ -89,8 +91,22 @@ public class Main {
             }
         }
 
-        System.out.println("***************************");
-        System.out.println("Position counter" + counter);
+        System.out.println("************* удаление JUNIOR ******************************");
+        counter.remove( POSITION.JUNIOR ); // remove удаляет сразу пару ключ/значение, еще можно так counter.remove( POSITION.JUNIOR, 1 )
+
+        System.out.println("**************** вывод counter Map ***************************");
+        System.out.println("Position counter " + counter);
+        System.out.println("Senior counter " + counter.get(POSITION.SENIOR));
+        System.out.println("Senior2 counter " + counter.get(POSITION.SENIOR_POMIDOR));//т.к. нет таких employee то выдаст null
+
+
+        System.out.println("************* вывод через Энтри counter ******************************");
+        //пройтись по парам ключ/значение и вывести их в нужном нам формате
+        // [ [JUNIOR], [1] ] - это и есть энтри, 1 пара ключ/значение
+        for ( Map.Entry<POSITION, Integer> entry : counter.entrySet() ) { //Map.Entry хранит в себе 1 пару ключ/значение, и тут мы достаем из каунтера 1 такую пару
+            System.out.println("Position: " + entry.getKey() + " counts " + entry.getValue());
+        }
+
 
         //данный цикл связан с интами выше, от которых мы избавились благодаря Мапе
 //        for (Employee employee : employeeLinkedList) {
