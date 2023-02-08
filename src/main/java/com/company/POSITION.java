@@ -2,10 +2,10 @@ package com.company;
 
 public enum POSITION {
 
-    JUNIOR( 5000) ,
-    MIDDLE( 10000 ),
-    SENIOR( 20000 ),
-    SENIOR_POMIDOR( 30000 );
+    JUNIOR( 5000) , //ординал=0
+    MIDDLE( 10000 ), //ординал=1
+    SENIOR( 20000 ), //ординал=2
+    SENIOR_POMIDOR( 30000 ); //ординал=3
 
     public final int minSalary;
 

@@ -54,4 +54,23 @@ public class Employee {
         this.position = position;
     }
 
+    public String toString() {
+        return "Employee info: " + this.firstName + " " + this.lastName + " " + this.position.toString();
+    }
+
+    public boolean equals(Object obj) {
+//        if (obj instanceof Employee) { //instanceof - это проверка принадлежности объекта классу
+//            if (((Employee) obj).firstName.equals(this.firstName) &&
+//                    ((Employee) obj).lastName.equals(this.lastName)) {
+//                return true;
+//            }
+//        }
+//        return false;//вот эти каскады ифов и ретернов можно записать как ниже через 1 ретерн
+
+        return obj instanceof Employee //если на этой строке не будет тру, то просто придет фолс и всё
+                && ((Employee) obj).firstName.equals(this.firstName)
+                && ((Employee) obj).lastName.equals(this.lastName);
+
+    }
+
 }

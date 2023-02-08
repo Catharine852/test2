@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bda97270-d18a-4ef3-a790-93fc5fe7a403" name="Changes" comment="commit2">
+    <list default="true" id="bda97270-d18a-4ef3-a790-93fc5fe7a403" name="Changes" comment="commit3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/POSITION.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/POSITION.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/ekaterina.afanasieva/IdeaProjects/firstABtest"
+    "last_opened_file_path": "C:/Users/ekaterina.afanasieva/IdeaProjects/test2"
   }
 }]]></component>
   <component name="RunManager">
@@ -116,12 +117,20 @@
       <option name="project" value="LOCAL" />
       <updated>1675191548530</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit3">
+      <created>1675194666485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675194666485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit1" />
     <MESSAGE value="commit2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit2" />
+    <MESSAGE value="commit3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit3" />
   </component>
 </project>
